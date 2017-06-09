@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Star Wars: Fuzzy Aces</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body ng-controller="ctrl">
+  <div>
+    {{ test }}
+    <ul ng-repeat="person in characters">
+      <li>
+        {{ person.name }}
+        <img ng-src="swapi-json-server/public/{{person.imgurl}}.jpg">
+      </li>
+    </ul>
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" charset="utf-8"></script>
+  <script src="js/app.js"></script>
+  <script src="js/logo.js"></script>
+  <script src="js/directives.js"></script>
+  <script src="js/service.js"></script>
+  <script src="js/mainservice.js"></script>
+  <script src="public/people.json"></script>
+  <script src="js/controller.js"></script>
+  </body>
+</html>
