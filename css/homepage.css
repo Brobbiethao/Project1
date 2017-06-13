@@ -1,21 +1,29 @@
 * {
   margin: 0;
   padding: 0;
-  border-top: 0;
+  box-sizing: border-box;
 }
 
-.character-list {
-  display: flex;
+span {
+  font-size: 50px;
+  color: black;
+  position: relative;
+  bottom: 30vh;
+  left: 16vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mediacenter {
+  position: absolute;
+  bottom: 5vh;
+  left: 6vw;
   flex-wrap: wrap;
+  text-align: center;
 }
 
-ul {
-  list-style: none;
-}
-
-.cellpadding {
-  padding-bottom: 10px;
-}
 
 .charView {
   border-style: solid;
@@ -34,4 +42,5 @@ ul {
 .bio {
   font-size: 10px;
   margin-left: 30px;
+  color: white;
 }

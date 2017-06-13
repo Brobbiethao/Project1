@@ -1,6 +1,7 @@
-<div ng-controller="ctrl">
-Hello
 
-
-
-</div>
+<ul class="character-list">
+  <li ng-repeat="person in characters">
+      <a ui-sref="character({name: person.name })"><img ng-src="swapi-json-server/public/{{person.imgurl}}.jpg" style="height: 150px; width: 180px"></a>
+        <br><a class="cellpadding">{{ person.name }}</a>
+  </li>
+</ul>

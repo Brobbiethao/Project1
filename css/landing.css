@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.navbar {
+  width: 100vw;
+  display: inline-flex;
+  justify-content: space-around;
+  color: white;
+  /*padding-top: 20px;*/
+  /*margin-bottom: 20px;*/
+}
+
+a {
+  color: white;
+}
+
+container-fluid {
+  display: inline-flex;
+  position: relative;
+}
+
+h2 {
+  color: white;
+}
+
+.flexcontainer {
+
+}

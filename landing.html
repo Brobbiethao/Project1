@@ -1,5 +1,40 @@
-<div class="starwars-demo">
-  <img src="//cssanimation.rocks/demo/starwars/images/star.svg" alt="Star" class="star">
-  <img src="//cssanimation.rocks/demo/starwars/images/wars.svg" alt="Wars" class="wars">
-  <h1 class="byline" id="byline">The Fuzzy Aces</h1>
+<!DOCTYPE html>
+<html ng-app='app'>
+  <head>
+    <meta charset="utf-8">
+    <title>Star Wars: The Scarif Archives</title>
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/pilots.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+</head>
+<div>
+  <div>
+<body ng-controller="ctrl">
+
+<div class="container-fluid">
+  <div class="navbar">
+    <a ui-sref="pilots"><h2>Persons of interest</h2></a>
+    <a ui-sref="home"><h2>Archive Search</h2></a>
+  </div>
+
+
+  <div class="flexcontainer">
+    <ui-view></ui-view>
+  </div>
 </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/directive.js"></script>
+  <script src="js/service.js"></script>
+  <script src="js/mainservice.js"></script>
+  <script src="js/controller.js"></script>
+  <script src="js/charCtrl.js"></script>
+  </body>
+</html>
