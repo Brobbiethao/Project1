@@ -14,7 +14,10 @@ ul {
 }
 
 .cellpadding {
-  padding-bottom: 10px;
+  padding-bottom: 40px;
+  color: white;
+  text-align: center;
+  align-items: center;
 }
 
 .charView {
