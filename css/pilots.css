@@ -16,8 +16,6 @@ ul {
 .cellpadding {
   padding-bottom: 40px;
   color: white;
-  text-align: center;
-  align-items: center;
 }
 
 .charView {
@@ -37,4 +35,11 @@ ul {
 .bio {
   font-size: 10px;
   margin-left: 30px;
+}
+
+.searchbar {
+  color: white;
+  width: 200px;
+  display: inline-flex;
+  width: 200px;
 }

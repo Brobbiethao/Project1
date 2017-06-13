@@ -1,6 +1,6 @@
-
+<div class="searchbar"><img src="swapi-json-server/public/search.png" style="width: 40px; height: 40px;"><input type="text" ng-model="name" class="inputbar" placeholder="Who are you looking for?"></div>
 <ul class="character-list">
-  <li ng-repeat="person in characters">
+  <li ng-repeat="person in characters | filter: name">
       <a ui-sref="character({name: person.name })"><img ng-src="swapi-json-server/public/{{person.imgurl}}.jpg" style="height: 150px; width: 180px"></a>
         <br><a class="cellpadding">{{ person.name }}</a>
         <br>
